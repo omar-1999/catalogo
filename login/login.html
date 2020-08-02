@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<meta name="description" content="inicio de sesion de usuario">
+	<title>Inicio de Sesion</title>
+	<link rel="stylesheet" href="../css/estilo_login.css">
+	<link rel="stylesheet" href="../../web/css/bootstrap.css">
+	<script type="text/javascript" src="../../web/js/jquery.js" ></script>
+	<script type="text/javascript" src="../../web/js/bootstrap.js" ></script>
+	<script src="../js/verificar.js"></script>
+</head>
+<body>
+	<div class="container col-md-4">
+		<div class="jumbotron">
+			<center><h1 class="display-4 label-usuario">Iniciar Sesion</h1></center>
+			<div class="form-group">
+				<form action="verificar.php" method="post" onsubmit="return verificaUsuario()">
+					<h3>Usuario o correo</h3>
+					<input type="text" class="form-control inpt" placeholder="User o email" id="user" name="user" required autofocus>
+					<h3>Contrase&ntilde;a</h3>
+					<input type="password" class="form-control inpt" placeholder="password..." id="clave" name="clave" required>
+					<input type="submit" value="Iniciar Sesion" class="bto btn btn-primary btn-block">
+					<a class="registr" href="registro.html">¿Quiero Registrarme?</a>&nbsp;
+					<a class="registr" href="../view/">Regresar</a>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

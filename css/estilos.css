@@ -1,0 +1,66 @@
+:root {
+	--size: 240px;
+	--border_radio: 5px;
+}
+
+.body {
+	background: #fff;
+}
+
+.cabecera {
+	font-size: 30px;
+	margin: 15px;
+	padding: 15px;
+	background: #E9F7FA;
+}
+
+.p-ofertas {
+	padding-top: 1em; 
+	font-size: 32px;
+	border-bottom: 1px solid;
+	font-family: Arial Narrow;
+	font-style: oblique;
+}
+
+.articles {
+	display: inline-block;
+	box-shadow: 0px 2px 2px .5px #000;
+	border-radius: var(--border_radio);
+	padding: 12px;
+	margin: 5px;
+}
+
+.articles:hover {
+	box-shadow: 0px 2px 6px 1px #000;
+}
+
+.contenedor-div {
+	width: var(--size);
+	height: var(--size);
+}
+
+.img-uno {
+	width: var(--size);
+	height: var(--size);
+}
+
+.img-uno:hover {
+	width: 250px;
+	height: 250px;
+}
+
+
+.precio {
+	width: var(--size);
+	background: white;
+	font-size: 28px;
+	border-top: 1px solid;
+	/*font-family: */
+	font-style: oblique;
+	border-radius: var(--border_radio);
+	text-align: center;
+}
+
+.precio p {
+	margin: 1px;
+}

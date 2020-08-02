@@ -1,0 +1,26 @@
+* {
+	font-family: Arial Narrow;
+	font-style: oblique;
+}
+
+.img {
+	border: 1px dashed black;
+
+}
+
+.text {
+	display: inline-block;
+	margin: 40px;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.descripcion {
+	width: 460px;
+	margin: 20px;
+	font-size: 25px;
+}
+
+label {
+	color: blue;
+}

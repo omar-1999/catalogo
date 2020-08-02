@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+	<title>Registrar Usuario</title>
+	<link rel="stylesheet" href="../../web/css/bootstrap.css">
+	<script type="text/javascript" src="../../web/js/jquery.js" ></script>
+	<script type="text/javascript" src="../../web/js/bootstrap.js" ></script>
+	<script src="../js/verificar_registro.js"></script>
+</head>
+<body>
+	<br>
+	<div class="container col-md-5">
+		<div class="jumbotron" style="border: 1px solid #82BDF4; margin-bottom: 0; padding-bottom: 20px; padding-top: 40px;">
+			<center><h1 class="display-4">Registrar Usuario</h1></center><br>
+			<div class="form-group">
+				<form action="registrar_login.php" method="post" onsubmit="return verificaRegistro()">
+					<div class="form-group">
+						<h3>Numero Id.</h3>
+						<input type="number" class="form-control" placeholder="1234567..." id="cedula" name="cedula" required autofocus>
+					</div>
+					<div class="form-row">
+					<div class="form-group col-md-6">
+						<h3>Nombre(s)</h3>
+						<input type="text" class="form-control" placeholder="Name" id="nombre" name="nombre" required>
+					</div>
+					<div class="form-group col-md-6">
+						<h3>Apellido(s)</h3>
+						<input type="text" class="form-control" placeholder="Last name" id="apellido" name="apellido" required>
+					</div>
+				</div>
+					<div class="form-group">
+						<h3>Correo</h3>
+						<input type="email" class="form-control" placeholder="example@email.com" id="correo" name="correo" required>
+					</div>
+					<div class="form-row">
+					<div class="form-group col-md-5">
+						<h3>Telefono</h3>
+						<input type="number" class="form-control" placeholder="321456..." id="cel" name="cel" required>
+					</div>
+					<div class="form-group col-md-7">
+						<h3>Direccion</h3>
+						<input type="text" class="form-control" placeholder="transv.. #12" id="direccion" name="direccion" required>
+					</div>
+				</div>
+					<div class="form-group">
+						<h3>Usuario</h3>
+						<input type="text" class="form-control form-group" placeholder="example123" id="user" name="user" required>
+						<P class="P">El login debe tener minimo 4 letras</P>
+					</div>
+					<div class="form-row">
+						<div class="form-group col-md-6">
+							<h3>Contrase&ntilde;a</h3>
+							<input type="password" class="form-control" placeholder="password..." id="clave" name="clave" required>
+							<P class="P">La contrase&ntilde;a debe tener minimo 4 letras, 2 numeros y 1 caracter especial</P>
+						</div>
+						<div class="form-group col-md-6">
+							<h3>Repetir Contrase&ntilde;a</h3>
+							<input type="password" class="form-control" placeholder="password..." id="repeatPass" name="repeatPass" required>
+							<p class="p" id="p">Las contrase&ntilde;as deben ser iguales</p>
+						</div>
+					</div>
+					<input type="submit" value=" Register " class="btn btn-primary btn-block">
+				</form>
+			</div>
+			<p><a href="login.html">Tengo una Cuenta</a></p>
+		</div>
+	</div>
+</body>
+</html>
